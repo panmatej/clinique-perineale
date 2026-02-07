@@ -48,8 +48,8 @@ const content = {
     },
     modal: {
       title: 'Partner Clinic',
-      subtitle: 'We are affiliated with',
-      clinicName: 'Clinique Mère-Enfant',
+      subtitle: 'We are affiliated with the clinic',
+      clinicName: 'Physiothérapie Mère-Enfant',
       message: 'To ensure the best care, you will be redirected to their website to book your appointment.',
       continue: 'Continue to Booking',
       cancel: 'Cancel',
@@ -97,8 +97,8 @@ const content = {
     },
     modal: {
       title: 'Clinique Partenaire',
-      subtitle: 'Nous sommes affiliés à la',
-      clinicName: 'Clinique Mère-Enfant',
+      subtitle: 'Nous sommes affiliés à la clinique',
+      clinicName: 'Physiothérapie Mère-Enfant',
       message: 'Pour assurer les meilleurs soins, vous serez redirigé vers leur site web pour prendre rendez-vous.',
       continue: 'Continuer vers la Réservation',
       cancel: 'Annuler',
@@ -242,7 +242,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-16 bg-cream-100">
+      {/* <section id="contact" className="py-16 bg-cream-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-3xl shadow-xl overflow-hidden md:flex">
             <div className="p-8 md:p-12 md:w-1/2 flex flex-col justify-center">
@@ -266,10 +266,10 @@ export default function Home() {
                   <span className="text-earth-800">{t.contact.email}</span>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* Inline Map with Overlay */}
-            <div
+            {/* <div
               className="bg-sage-200 h-64 md:h-auto md:w-1/2 relative min-h-[300px] cursor-pointer group"
               onClick={() => setIsMapFullscreen(true)}
             >
@@ -283,10 +283,10 @@ export default function Home() {
                 style={{ border: 0 }}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
+              ></iframe> */}
 
               {/* Hover Overlay */}
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors flex items-center justify-center">
+              {/* <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors flex items-center justify-center">
                 <span className="bg-white/90 backdrop-blur text-sage-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-2 transform translate-y-2 group-hover:translate-y-0 duration-200">
                   <Maximize2 size={16} />
                   {t.contact.clickMap}
@@ -295,7 +295,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Footer */}
       <footer className="bg-white py-8 border-t border-sage-100 mt-auto">
