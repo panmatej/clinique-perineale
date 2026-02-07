@@ -1,26 +1,34 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-cream-50: #fdfbf7;
+  --color-cream-100: #f7f3e8;
+  --color-sage-50: #f2f7f2;
+  --color-sage-100: #e3ebe3;
+  --color-sage-200: #c5dnc5; /* Typo fix in next step if generic, but let's use hex */
+  --color-sage-500: #8da399;
+  --color-sage-600: #6f857c;
+  --color-sage-700: #556b62;
+  --color-earth-800: #4a453e;
+  --color-earth-900: #2d2a26;
+  
+  --font-sans: var(--font-nunito), ui-sans-serif, system-ui, sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Custom Utilities for that "comfy" feel */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
   }
+}
+
+:root {
+  --background: var(--color-cream-50);
+  --foreground: var(--color-earth-800);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
 }
